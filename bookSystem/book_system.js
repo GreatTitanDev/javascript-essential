@@ -42,6 +42,13 @@ function editbook(index) {
     document.getElementById('pagesNumber').value = book.pagesNumber;
     books.slice(index, 1);
     showbooks();
+
     
-    
+}
+
+function clearInputs() {
+    document.getElementById('bookName').value = '';
+    document.getElementById('authorName').value = '';
+    document.getElementById('bookDescription').value = '';
+    document.getElementById('pagesNumber').value = '';
 }
