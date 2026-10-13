@@ -10,7 +10,7 @@ function addBook() {
                     const book = {
                         name: bookName,
                         authorName: authorName,
-                        bookDescription: bookDescription;
+                        bookDescription: bookDescription,
                         pagesNumber: pagesNumber
                     };
                     books.push(book);
