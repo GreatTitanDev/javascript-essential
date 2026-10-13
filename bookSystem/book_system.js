@@ -32,3 +32,16 @@ function showbooks() {
     );
     document.getElementById('books').innerHTML = booksDiv.join('');
 }
+
+
+function editbook(index) {
+    const book = books[index]
+    document.getElementById('bookName').value = book.name;
+    document.getElementById('authorName').value = book.authorName;
+    document.getElementById('bookDescription').value = book.bookDescription;
+    document.getElementById('pagesNumber').value = book.pagesNumber;
+    books.slice(index, 1);
+    showbooks();
+    
+    
+}
